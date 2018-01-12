@@ -79,6 +79,8 @@ endif
 set display+=lastline
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set number
+
 " Spaces instead of tabs
 " Fix entire file with :retab
 set expandtab
