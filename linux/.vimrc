@@ -1,12 +1,14 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-plug config 
+" vim-plug config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-Plug 'crusoexia/vim-monokai'
+"Plug 'crusoexia/vim-monokai'
+
+Plug 'tpope/vim-fugitive'
 
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes' 
+Plug 'vim-airline/vim-airline-themes'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
@@ -16,17 +18,18 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colorscheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax on
-colorscheme monokai
+"syntax on
+"colorscheme monokai
 
 " Fix bg color in tmux
-set t_ut=
+"set t_ut=
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline
 " http://sukiand.github.io/2016/02/12/Color%20config%20for%20putty-vim/#putty-airline-seperator-font-problem
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme = 'badwolf'
+"let g:airline_theme = 'badwolf'
+let g:airline_theme = 'bubblegum'
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -53,7 +56,6 @@ set ttimeoutlen=50
 "Nerdtree
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sensible Vim
